@@ -1,4 +1,4 @@
-# Write this function above your main( ) function
+# Rectangle
 def draw_rectangle(screen, rect, color, thickness):
     """Draws a rectangle on the Pygame window."""
     pygame.draw.rect(screen, color, rect, thickness)
@@ -32,27 +32,26 @@ def draw_line(surface, color, start_pos, end_pos, thickness):
 
     pygame.draw.line(surface, color, start_pos, end_pos, thickness)
 
-# Calling the function to draw lines
 def main():
     screen = init_game()
-    clock = pygame.time.Clock()  # Initialize the clock here
+    clock = pygame.time.Clock()  
 
     running = True
     while running:
         running = handle_events()
-        screen.fill(config.WHITE)  # Use color from config
+        screen.fill(config.WHITE)  
 
-        # Call the function to draw the lines
-
-        # Draw a BLUE line with thickness/width of 5 pixels
+        
         draw_line(screen, config.BLUE, [100, 100], [700, 500], 5)  
 
-        # Draw a RED line with thickness/width of 2 pixels
+       
         draw_line(screen, config.RED, [75, 250], [500, 300], 2)  
 
         pygame.display.flip()
 
-        clock.tick(config.FPS)  # Use the clock to control the frame rate
+        clock.tick(config.FPS) 
 
     pygame.quit()
     sys.exit()
+
+
