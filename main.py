@@ -13,7 +13,7 @@ def init_game():
 
 def handle_events():
     for event in pygame.event.get():
-        if event.type == pygame.QUIT 
+        if event.type == pygame.QUIT: 
           return False
         return True
     

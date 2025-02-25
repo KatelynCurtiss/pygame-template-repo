@@ -7,6 +7,7 @@ pygame.init()
 screen = pygame.display.set_mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT))
 pygame.display.set_caption(config.TITLE)
 
+
 running = True
 while running:
     for event in pygame.event.get():
@@ -93,8 +94,6 @@ if __name__ == "__main__":
     
 pygame.display.flip()
 
-pygame.quit()
-sys.exit()
 
 def draw_rectangle(screen, rect, color, thickness):
 
