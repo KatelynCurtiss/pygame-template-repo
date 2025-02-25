@@ -1,4 +1,4 @@
-1 # Pygame Configuration Module
+ # Pygame Configuration Module
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -13,6 +13,6 @@ HOT_PINK = (255,0,144)
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
 
-FPS = 60
 
 TITLE = "Pygame Window"
+FPS = 60

@@ -1,6 +1,9 @@
 # Katelyn Curtiss
 # Febraury 11 2025
 # Pygame Template 
+import pygame 
+import config
+import sys
 
 def init_game():
     pygame.init()
@@ -26,4 +29,10 @@ def main():
         screen.fill(config.WHITE)
         pygame.display.flip
 
-        clock.tick()
+        clock.tick(config.FPS)
+
+
+    pygame.quit()
+    sys.exit()
+if __name__ == "__main__":
+    main()
