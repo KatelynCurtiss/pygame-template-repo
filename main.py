@@ -2,36 +2,28 @@
 # Febraury 11 2025
 # Pygame Template 
 
-import pygame
-import sys
+def init_game():
+    pygame.init()
+    screen = pygame.display.set.mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT))
+    pygame.display.set_caption(config.TITLE)
+    return screen
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+def handle_events():
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT 
+          return False
+        return True
+    
+    
+    
+def main():
+    screen = init_game()
+    clock = pygame.time.Clock()
 
-FPS = 60 # Frames per second
+    running = True
+    while running: 
+        running = handle_events()
+        screen.fill(config.WHITE)
+        pygame.display.flip
 
-WHITE = (255, 255, 255)
-
-pygame.init()
-
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Pygame Template")
-
-clock = pygame.time.Clock() # Note the capital C in the word clock!
-
-running = True
-while running:
-
-   for event in pygame.event.get():
-    if event.type == pygame.QUIT: 
-
-      running = False
-
-screen.fill(WHITE) 
-pygame.display.flip() 
-
-
-clock.tick(FPS)
-
-pygame.quit()
-sys.exit()
+        clock.tick()
